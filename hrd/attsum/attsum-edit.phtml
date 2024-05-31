@@ -1,0 +1,180 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Attendance Summary</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hratdsum_id" class="easyui-textbox" mapping="hratdsum_id"  maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_hratdsum_dt" class="easyui-datebox" style="width: 400px" mapping="hratdsum_dt" data-options="editable:false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row head-step2 head-step2-hidden" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Responsible Empl</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_empl_id" class="easyui-combo" style="width: 400px" mapping="empl_id" display="empl_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Position</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_position" class="easyui-textbox" mapping="position"  maxlength="60" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Organisation</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_organisation" class="easyui-textbox" mapping="organisation"  maxlength="60" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Schedule In</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_schd_in" class="easyui-textbox" mapping="schd_in"  maxlength="8" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Schedule Out</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_schd_out" class="easyui-textbox" mapping="schd_out"  maxlength="8" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Actual In</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_in" class="easyui-textbox" mapping="actual_in"  maxlength="8" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Actual Out</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_out" class="easyui-textbox" mapping="actual_out"  maxlength="8" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Actual In Var</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_invar" class="easyui-numberbox" mapping="actual_invar" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Actual Out Var</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_outvar" class="easyui-numberbox" mapping="actual_outvar" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Working Effective</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_actual_workeff" class="easyui-numberbox" mapping="actual_workeff" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Position</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_daytype" class="easyui-textbox" mapping="daytype"  maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Working Effective</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_score_late" class="easyui-numberbox" mapping="score_late" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Working Effective</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_score_workeff" class="easyui-numberbox" mapping="score_workeff" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Working Effective</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_score_add" class="easyui-numberbox" mapping="score_add" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Working Effective</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_score_total" class="easyui-numberbox" mapping="score_total" style="width: 400px; text-align:right" data-options="precision: 2, decimalSeparator:'.', groupSeparator:','  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; display: flex; justify-content: space-between; padding: 10px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol-tombol xtion disini -->
+			<?php
+			$customheaderxtion = __DIR__.'/attsum-edit-customxtion.phtml'; 
+			if (is_file($customheaderxtion)) {
+				include $customheaderxtion;
+			} else { ?>
+			
+			
+			
+			
+			<?php } ?>
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="margin-bottom: 10px; margin-right: 10px">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

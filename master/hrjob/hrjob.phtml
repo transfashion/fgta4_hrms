@@ -1,0 +1,14 @@
+<?php require_once dirname(__FILE__).'/hrjob-list.phtml' ?>
+<?php require_once dirname(__FILE__).'/hrjob-edit.phtml' ?>
+<?php require_once dirname(__FILE__).'/hrjob-hrjobrolegrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/hrjob-hrjobroleform.phtml' ?>
+
+
+
+<?php
+$customrecordstatus = __DIR__.'/hrjob-customrecordstatus.phtml'; 
+if (is_file($customrecordstatus)) {
+	include $customrecordstatus;
+} else { ?>
+
+<?php } ?>

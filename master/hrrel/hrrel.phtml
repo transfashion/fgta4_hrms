@@ -1,0 +1,12 @@
+<?php require_once dirname(__FILE__).'/hrrel-list.phtml' ?>
+<?php require_once dirname(__FILE__).'/hrrel-edit.phtml' ?>
+
+
+
+<?php
+$customrecordstatus = __DIR__.'/hrrel-customrecordstatus.phtml'; 
+if (is_file($customrecordstatus)) {
+	include $customrecordstatus;
+} else { ?>
+
+<?php } ?>

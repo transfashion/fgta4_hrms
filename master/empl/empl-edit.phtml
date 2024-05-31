@@ -1,0 +1,323 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Employee</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_id" class="easyui-textbox" mapping="empl_id" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">NIK</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_nik" class="easyui-textbox" mapping="empl_nik" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Name</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_name" class="easyui-textbox" mapping="empl_name" uppercase="true" maxlength="60" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Nama Karyawan harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_empl_isdisabled" class="easyui-checkbox c1" mapping="empl_isdisabled" data-options="label: 'Disabled', labelPosition: 'after', checked: false ">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Join Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_empl_dtjoin" class="easyui-datebox" style="width: 400px" mapping="empl_dtjoin" data-options="editable:false , required: true, invalidMessage: 'Tanggal masuk harus diisi'">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div id="pnl_edit-empl_dtexit" class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Exit Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_empl_dtexit" class="easyui-datebox" style="width: 400px" mapping="empl_dtexit" data-options="editable:false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Birth Place</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_birthplace" class="easyui-textbox" mapping="empl_birthplace" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Tempat lahir harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Birth Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_empl_birthdate" class="easyui-datebox" style="width: 400px" mapping="empl_birthdate" data-options="editable:false , required: true, invalidMessage: 'Tanggal lahir harus diisi'">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Gender</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_gender_id" class="easyui-combo" style="width: 400px" mapping="gender_id" display="gender_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Gender harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_gender_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Religion</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_religion_id" class="easyui-combo" style="width: 400px" mapping="religion_id" display="religion_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Religion harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_religion_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div id="pnl_edit-empl_addressline1" class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Address</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_addressline1" class="easyui-textbox" mapping="empl_addressline1" uppercase="true" maxlength="255" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Alamat harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div id="pnl_edit-empl_addressline2" class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">&nbsp;</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_addressline2" class="easyui-textbox" mapping="empl_addressline2" uppercase="true" maxlength="255" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div id="pnl_edit-empl_addressline3" class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">&nbsp;</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_addressline3" class="easyui-textbox" mapping="empl_addressline3" uppercase="true" maxlength="255" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">City</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_city" class="easyui-textbox" mapping="empl_city" uppercase="true" maxlength="20" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Kota harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Post Code</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_postcode" class="easyui-textbox" mapping="empl_postcode"  maxlength="10" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Prov</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_prov" class="easyui-textbox" mapping="empl_prov" uppercase="true" maxlength="20" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Propinsi harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Country</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_country_id" class="easyui-combo" style="width: 400px" mapping="country_id" display="country_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Country harus diisi'"   validType="requiredcombo['pnl_edit-cbo_country_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">HP</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_mobilephone" class="easyui-textbox" mapping="empl_mobilephone"  maxlength="30" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'HP harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Phone</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_phone" class="easyui-textbox" mapping="empl_phone"  maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Email</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_email" class="easyui-textbox" mapping="empl_email" lowercase="true" maxlength="120" style="width: 400px" data-options="multiline: false , required: true, validType: 'email', invalidMessage: 'Email harus diisi dan dengan format yang benar' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Education</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_edu_id" class="easyui-combo" style="width: 400px" mapping="edu_id" display="edu_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Education harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_edu_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">KK</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_kk" class="easyui-textbox" mapping="empl_kk" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">KTP</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_ktp" class="easyui-textbox" mapping="empl_ktp" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'No KTP harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">NPWP</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_npwp" class="easyui-textbox" mapping="empl_npwp" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'NPWP harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Marital</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_marital_id" class="easyui-combo" style="width: 400px" mapping="marital_id" display="marital_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Status marital harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_marital_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">BPJS Tk</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_bpjstk" class="easyui-textbox" mapping="empl_bpjstk" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">BPJS Kes</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_bpjskes" class="easyui-textbox" mapping="empl_bpjskes" uppercase="true" maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Nama Ibu Kandung</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_namaibu" class="easyui-textbox" mapping="empl_namaibu" uppercase="true" maxlength="90" style="width: 400px" data-options="multiline: false , required: true, invalidMessage: 'Nama ibu kandung harus diisi' ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Rekening #1</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_rek1" class="easyui-textbox" mapping="empl_rek1" uppercase="true" maxlength="90" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Rekening #2</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_empl_rek2" class="easyui-textbox" mapping="empl_rek2" uppercase="true" maxlength="90" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Status</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_hrstatus_id" class="easyui-combo" style="width: 400px" mapping="hrstatus_id" display="hrstatus_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Status harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_hrstatus_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Dept</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_dept_id" class="easyui-combo" style="width: 400px" mapping="dept_id" display="dept_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Dept harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_dept_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Job</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_hrjob_id" class="easyui-combo" style="width: 400px" mapping="hrjob_id" display="hrjob_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Job harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_hrjob_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Site</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_site_id" class="easyui-combo" style="width: 400px" mapping="site_id" display="site_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Site harus diisi', prompt: '-- PILIH --'"   validType="requiredcombo['pnl_edit-cbo_site_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Auth Override</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_auth_id" class="easyui-combo" style="width: 400px" mapping="auth_id" display="auth_name" data-options="editable:false, valueField:'id', textField:'text' , prompt: 'NONE'"  >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; display: flex; justify-content: space-between; padding: 10px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol-tombol xtion disini -->
+			<?php
+			$customheaderxtion = __DIR__.'/empl-edit-customxtion.phtml'; 
+			if (is_file($customheaderxtion)) {
+				include $customheaderxtion;
+			} else { ?>
+			
+			
+			
+			
+			<?php } ?>
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="margin-bottom: 10px; margin-right: 10px">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

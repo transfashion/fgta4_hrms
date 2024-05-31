@@ -1,0 +1,10 @@
+Employee Mutation
+		
+Original Path : /Users/agung/Development/fgtacloud4u/server/apps/hrms/hrd/hremplmut
+Creator Name  : Agung Nugroho
+                agung.dhewe@gmail.com
+Created Date  : Sun Feb 05 2023 06:01:50 GMT+0700 (Western Indonesia Time)				 
+=========================================================================================
+
+melakukan pemindahan lokasi, organisai, dan job karyawan
+		

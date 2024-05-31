@@ -1,0 +1,99 @@
+<div id="pnl_list">
+	<div class="fgta-page-title">Daftar Attendance Summary</div>
+
+	<div id="pnl_list-pnl_head" style="display: flex; align-items: flex-end">
+		<?php
+		$customheadbutton = __DIR__.'/attsum-list-customheadbutton.phtml'; 
+		if (is_file($customheadbutton)) {
+			include $customheadbutton;
+		} else { ?>
+		<div class="list-buttonbaru" style="text-align: right; width: calc(100% - 10px); float: right;  position: absolute">
+			<a href="javascript:void(0)" id="pnl_list-btn_new" class="easyui-linkbutton c8" style="width: 60px">Baru</a>
+		</div>
+		<?php } ?>
+
+		<?php
+		$customsearch = __DIR__.'/attsum-list-customsearch.phtml'; 
+		if (is_file($customsearch)) {
+			include $customsearch;
+		} else { ?>
+		<!-- Simple Query -->
+		<div class="list-search-wrap" style="width: calc(100% - 65px); display: flex;">
+			<div class="list-search-item" style="width: 50px;">Cari</div>
+			<div class="list-search-item">
+				<input id="pnl_list-txt_search" class="easyui-textbox" style="width: 100%">
+			</div>
+			<div class="list-search-item" style="width: 45px">
+				<a href="javascript:void(0)" id="pnl_list-btn_load" class="easyui-linkbutton c8" style="width: 45px">Load</a>
+			</div>
+		</div>
+		<?php } ?>
+	</div>
+
+
+	<div style="margin-top: 10px">
+		<table id="pnl_list-tbl_list" paging="true" cellspacing="0" width="100%" class="deftable">
+			<?php
+			$customview = __DIR__.'/attsum-list-customview.phtml'; 
+			if (is_file($customview)) {
+				include $customview;
+			} else { ?>
+
+			<thead>
+				<tr>
+					<th mapping="hratdsum_id">hratdsum_id</th>
+					<th mapping="hratdsum_dt">hratdsum_dt</th>
+					<th mapping="empl_name">empl_name</th>
+					<th mapping="position">position</th>
+					<th mapping="organisation">organisation</th>
+					<th mapping="schd_in">schd_in</th>
+					<th mapping="schd_out">schd_out</th>
+					<th mapping="actual_in">actual_in</th>
+					<th mapping="actual_out">actual_out</th>
+					<th mapping="actual_invar" style="text-align: right"  formatter="row_format_number">actual_invar</th>
+					<th mapping="actual_outvar" style="text-align: right"  formatter="row_format_number">actual_outvar</th>
+					<th mapping="actual_workeff" style="text-align: right"  formatter="row_format_number">actual_workeff</th>
+					<th mapping="daytype">daytype</th>
+					<th mapping="score_late" style="text-align: right"  formatter="row_format_number">score_late</th>
+					<th mapping="score_workeff" style="text-align: right"  formatter="row_format_number">score_workeff</th>
+					<th mapping="score_add" style="text-align: right"  formatter="row_format_number">score_add</th>
+					<th mapping="score_total" style="text-align: right"  formatter="row_format_number">score_total</th>
+
+				</tr>
+				<tr style="background-color: #cccccc; height: 30px">
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">ID</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Date</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Responsible Empl</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Position</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Organisation</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Schedule In</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Schedule Out</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Actual In</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Actual Out</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Actual In Var</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Actual Out Var</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Working Effective</td>
+					<td class="fgtable-head" style="width: 100px; border-bottom: 1px solid #000000">Position</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Working Effective</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Working Effective</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Working Effective</td>
+					<td class="fgtable-head" style="width: 100px; text-align: right; border-bottom: 1px solid #000000">Working Effective</td>
+
+				</tr>
+			</thead>
+
+			<?php } ?>
+
+		</table>
+	</div>
+
+
+	<?php
+	$customfootbutton = __DIR__.'/attsum-list-customfootbutton.phtml'; 
+	if (is_file($customfootbutton)) {
+		include $customfootbutton;
+	} 
+	?>	
+
+
+</div>

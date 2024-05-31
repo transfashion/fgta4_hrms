@@ -1,0 +1,289 @@
+<div id="pnl_edit">
+	<div class="fgta-page-title" style="display: flex; align-items: center ">
+		<div>Edit Employee Clearance</div>
+		<a id="pnl_edit-btn_edit" href="javascript:void(0)" class="easyui-linkbutton" style="margin-left:10px;" data-options="plain:true,iconCls:'fgta-icon-edit'">edit</a>
+	</div>
+
+
+	<form id="pnl_edit-form">
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">ID</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_id" class="easyui-textbox" mapping="hremplclr_id"  maxlength="30" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Employee</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_empl_id" class="easyui-combo" style="width: 400px" mapping="empl_id" display="empl_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Employee harus diisi'"   validType="requiredcombo['pnl_edit-cbo_empl_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Site</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_site_id" class="easyui-combo" style="width: 400px" mapping="site_id" display="site_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Site harus diisi'"   validType="requiredcombo['pnl_edit-cbo_site_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Dept</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_dept_id" class="easyui-combo" style="width: 400px" mapping="dept_id" display="dept_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Dept harus diisi'"   validType="requiredcombo['pnl_edit-cbo_dept_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Job</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_hrjob_id" class="easyui-combo" style="width: 400px" mapping="hrjob_id" display="hrjob_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'Dept Model harus diisi'"   validType="requiredcombo['pnl_edit-cbo_hrjob_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Eff.Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-dt_hremplclr_effdate" class="easyui-datebox" style="width: 400px" mapping="hremplclr_effdate" data-options="editable:false ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Descr</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_descr" class="easyui-textbox" mapping="hremplclr_descr"  maxlength="255" style="width: 400px" data-options="multiline: false  ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Doc</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_doc_id" class="easyui-combo" style="width: 400px" mapping="doc_id" display="doc_name" data-options="editable:false, valueField:'id', textField:'text' , required: true, invalidMessage: 'ID harus diisi', disabled: true"   validType="requiredcombo['pnl_edit-cbo_doc_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+		
+					<?=$this->Section('Outstanding', true, true, '')?>
+					<div class="fgta_section_collapsible " style="display: none">
+					<?php require_once __DIR__ . '/hremplclr-edit-outstanding.phtml'; ?>
+					
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col">Outstanding Status</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_isoutstdchecking" class="easyui-checkbox c1" mapping="hremplclr_isoutstdchecking" data-options="label: 'Checking', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_isoutstdcheck" class="easyui-checkbox c1" mapping="hremplclr_isoutstdcheck" data-options="label: 'Checked', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Requestor', true, true, '')?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Employee</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_user_empl_id" class="easyui-combo" style="width: 400px" mapping="user_empl_id" display="user_empl_name" data-options="editable:false, valueField:'id', textField:'text' , disabled: true, required: true, invalidMessage: 'Employee harus diisi'"   validType="requiredcombo['pnl_edit-cbo_user_empl_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Dept</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-cbo_user_dept_id" class="easyui-combo" style="width: 400px" mapping="user_dept_id" display="user_dept_name" data-options="editable:false, valueField:'id', textField:'text' , disabled: true, required: true, invalidMessage: 'Dept harus diisi'"   validType="requiredcombo['pnl_edit-cbo_user_dept_id']" >
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+		<?=$this->Section('Document Status', true, true, '')?>
+		<div class="fgta_section_collapsible " style="display: none">
+					
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Doc Version</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_version" class="easyui-numberbox" mapping="hremplclr_version" style="width: 400px; text-align:right" data-options="precision: 0, decimalSeparator:'.', groupSeparator:','  , disabled: true">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Reject Notes</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_rejectnotes" class="easyui-textbox" mapping="hremplclr_rejectnotes"  maxlength="255" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_iscommit" class="easyui-checkbox c1" mapping="hremplclr_iscommit" data-options="label: 'Commit', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">CommitBy</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_commitby" class="easyui-textbox" mapping="hremplclr_commitby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">CommitDate</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_commitdate" class="easyui-textbox" mapping="hremplclr_commitdate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_isapprovalprogress" class="easyui-checkbox c1" mapping="hremplclr_isapprovalprogress" data-options="label: 'Progress', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_isapproved" class="easyui-checkbox c1" mapping="hremplclr_isapproved" data-options="label: 'Approved', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Approve By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_approveby" class="easyui-textbox" mapping="hremplclr_approveby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Approve Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_approvedate" class="easyui-textbox" mapping="hremplclr_approvedate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_isdeclined" class="easyui-checkbox c1" mapping="hremplclr_isdeclined" data-options="label: 'Declined', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Decline By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_declineby" class="easyui-textbox" mapping="hremplclr_declineby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Decline Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_declinedate" class="easyui-textbox" mapping="hremplclr_declinedate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" >
+			<div class="form_label_col"></div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-chk_hremplclr_isexecute" class="easyui-checkbox c1" mapping="hremplclr_isexecute" data-options="label: 'Executed', labelPosition: 'after', checked: false , disabled: true">
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Execute By</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_executeby" class="easyui-textbox" mapping="hremplclr_executeby"  maxlength="14" style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		<div class="form_row pnl_edit_row" style="display: none">
+			<div class="form_label_col"  style="border: 0px solid black; vertical-align: top; margin-top: 7px;">Execute Date</div>
+			<div class="form_input_col" style="border: 0px solid black">
+				<input id="pnl_edit-txt_hremplclr_executedate" class="easyui-textbox" mapping="hremplclr_executedate"   style="width: 400px" data-options="multiline: false , disabled: true ">
+				<div style="margin-top: 3px; margin-bottom: 5px; font-size: 0.75em; font-style: italic; color:#54381d;"></div>
+			</div>
+		</div>
+
+		</div>
+					
+	</form>
+
+
+	<div class="form_row" style="margin-top: 30px">
+		<div class="form_label_col"></div>
+		<div class="form_input_col" style="border: 0px solid black">
+			<a id="pnl_edit-btn_save" class="easyui-linkbutton c1" style="width">Simpan</a>
+		</div>
+	</div>	
+
+
+
+		<div id="pnl_edit-detil" class="form_row" style="margin-top: 30px">
+			<div class="form_label_col"></div>
+			<div class="form_input_col detilbox" style="border: 0px solid black">
+				<div class="fgtable-head" style="height: 25px; padding: 5px 0px 0px 5px">Detil Informations</div>
+				<div class="fgtable-head-drow" style="height: 25px; padding: 5px 5px 0px 5px; " onclick="$ui.getPages().ITEMS['pnl_edit'].handler.detil_open('pnl_editapprovalgrid')">
+					<div id="pnl_edit-txt_approval_title" class="detilgrid-text">Approval</div>
+					<div id="pnl_edit-txt_approval_value" class="detilgrid-value">&nbsp;</div>
+				</div>
+
+			</div>		
+		</div>		
+		
+		
+
+
+	<div style="margin-top: 30px; margin-left:-5px; margin-right: -5px; background-color: #cccccc; display: flex; justify-content: space-between; padding: 10px 2px 2px 2px ">
+		<div>
+			<!-- letakkan tombol-tombol xtion disini -->
+			<?php
+			$customheaderxtion = __DIR__.'/hremplclr-edit-customxtion.phtml'; 
+			if (is_file($customheaderxtion)) {
+				include $customheaderxtion;
+			} else { ?>
+			
+			
+			<a id="pnl_edit-btn_commit" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="iconCls:'fgta-icon-commit'">Commit</a>			
+			<a id="pnl_edit-btn_uncommit" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="iconCls:'fgta-icon-uncommit'">UnCommit</a>
+			
+			
+				<a id="pnl_edit-btn_approve" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="plain:true,iconCls:'fgta-icon-posting'">Approve</a>
+				<a id="pnl_edit-btn_decline" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;" data-options="plain:true,iconCls:'fgta-icon-unposting'">Decline</a>
+				
+			
+			<?php } ?>
+		</div>
+		<div>
+			<a id="pnl_edit-btn_delete" class="easyui-linkbutton c5" style="margin-bottom: 10px; margin-right: 10px">Hapus</a>
+		</div>
+	</div>
+
+</div>
+

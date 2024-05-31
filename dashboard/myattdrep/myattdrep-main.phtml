@@ -1,0 +1,39 @@
+<div id="pnl_main">
+
+	<div class="dash-title">
+		<input id="pnl_main-cbo_selectperiode" class="easyui-combo" style="width: 150px" data-options="required: true, editable:false, valueField:'periode_val', textField:'periode_display' ">
+	</div>
+	<div class="dash-container">
+		
+		<!-- Gauge -->
+		<div class="dash-item rep-gauges-container">
+			<div class="rep-gauges-row1">
+				<div id="pnl_main-chart-reputation" style="width: 100%; height: 250px"></div>
+			</div>
+			<div class="rep-gauges-row2">
+				<div class="dash-item" style="margin-left: 10%">
+					<div id="pnl_main-chart-late" style="width: 100%; height: 125px"></div>
+				</div>
+				<div class="dash-item"  style="margin-right: 10%">
+					<div id="pnl_main-chart-workeff" style="width: 100%; height: 125px"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- History Data -->
+		<div class="dash-item dash-item-history">
+			<div id="pnl_main-chart-history" style="width: 100%; height: 100%"></div>
+		</div>
+
+
+	</div>
+	<div class="dash-footer">
+		<div>
+			<a id="pnl_main-btn_refresh" href="javascript:void(0)" class="easyui-linkbutton c8" style="margin-left:10px; margin-bottom: 10px;">Refresh</a>
+		</div>
+	</div>
+	<div style="text-align: center; text-style: italic; font-size: 8px">
+		Source Data: Greetday
+	</div>
+
+</div>

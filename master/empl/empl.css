@@ -1,0 +1,23 @@
+#pnl_edit-empl_addressline1 {
+	margin-bottom: 0px !important;
+}
+
+#pnl_edit-empl_addressline2 {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+#pnl_edit-empl_addressline3 {
+	margin-top: 0px !important;
+}
+
+
+@media screen and (max-width: 520px) {
+	#pnl_edit-empl_addressline2 .form_label_col {
+		display: none;
+	}
+
+	#pnl_edit-empl_addressline3 .form_label_col {
+		display: none;
+	}
+}

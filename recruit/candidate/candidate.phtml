@@ -1,0 +1,26 @@
+<?php require_once dirname(__FILE__).'/candidate-list.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-edit.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtedugrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdteduform.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtfamgrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtfamform.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdttraingrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdttrainform.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtjobexpgrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtjobexpform.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtorggrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtorgform.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtreffgrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtreffform.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtattchgrid.phtml' ?>
+<?php require_once dirname(__FILE__).'/candidate-hrcdtattchform.phtml' ?>
+
+
+
+<?php
+$customrecordstatus = __DIR__.'/candidate-customrecordstatus.phtml'; 
+if (is_file($customrecordstatus)) {
+	include $customrecordstatus;
+} else { ?>
+
+<?php } ?>

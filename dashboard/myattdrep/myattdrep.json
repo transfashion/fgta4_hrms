@@ -1,0 +1,7 @@
+{
+	"title" : "Attendance Reputation",
+	"variance" : {},
+	"allowanonymous" : false,
+	"allowedgroups" : ["public"]
+}
+
