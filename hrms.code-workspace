@@ -5,8 +5,12 @@
 			"name": "HRMS Module"
 		},
 		{
-			"path": "../fgta4_generator",
+			"path": "../generator",
 			"name": "FGTA4 Generator"
+		},
+		{
+			"path": "../framework",
+			"name": "Framework"
 		}
 	],
 	"settings": {}
