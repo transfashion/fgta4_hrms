@@ -3,6 +3,7 @@
 const dbtype = global.dbtype;
 const comp = global.comp;
 
+
 module.exports = {
 	title: "Employee",
 	autoid: true,
